@@ -8,11 +8,11 @@
 
 # List of applications to run
 APPS=(
+    nextcloud --background
     )
-
+nex
 # Some applications start child applications that need to be killed on reload
 KILL=(
-    barrierc
     )
 
 # First kill lingering apps

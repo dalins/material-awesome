@@ -16,12 +16,12 @@ local slider =
 slider:connect_signal(
   'property::value',
   function()
-    spawn('xbacklight -set ' .. math.max(slider.value, 5))
+    spawn('brightnessctl s ' .. math.max(slider.value, 5) .. '%')
   end
 )
 
 watch(
-  [[bash -c "xbacklight -get"]],
+  [[bash -c "brigtnessctl g"]],
   1,
   function(widget, stdout, stderr, exitreason, exitcode)
     local brightness = string.match(stdout, '(%d+)')
