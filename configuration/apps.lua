@@ -22,7 +22,7 @@ return {
     editor = 'code', -- gui text editor
     social = 'telegram-desktop',
     game = rofi_command,
-    files = 'nautilus',
+    files = 'nemo',
     music = 'spotify'
   },
   -- List of apps to start once on start-up
@@ -36,6 +36,7 @@ return {
     --'scream -u -p 4011 -i virbr1', -- scream audio sink
     'xautolock -time 5 -locker "/usr/bin/i3lock-fancy -gpf Roboto-Regular" -detectsleep',
     '/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
+    '/home/daniel/Projects/paperview/paperview /home/daniel/Projects/paperview/scenes/rain 5',
     --KDE '/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     -- MATE'/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     'flameshot',
